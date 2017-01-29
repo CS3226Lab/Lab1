@@ -1,0 +1,33 @@
+div.legend{
+    margin:auto;
+    padding:20px;
+    width:400px;
+    border: 1px solid black
+}
+
+span.color{
+    height:10px;
+    width:30px;
+    border-radius:2px dotted black;
+    display:inline-block;
+}
+
+.bronze, #bronze{
+    background-color:coral;
+}
+
+.orange, #orange{
+    background-color:orange;
+}
+
+.silver, #silver{
+    background-color:silver;
+}
+
+.gold, #gold{
+    background-color:gold;
+}
+
+.pink, #pink{
+    background-color:pink;
+}
