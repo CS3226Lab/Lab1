@@ -44,6 +44,7 @@ TableSorter.prototype = {
             }
             this.ViewState[rowIndex] = false;
             this.Header[rowIndex].style.cursor = "pointer";
+            this.Header[rowIndex].title="Click to sort";
             this.Header[rowIndex].onclick = this.GetFunction(this, "Sort", rowIndex);
         }
     },
@@ -56,6 +57,7 @@ TableSorter.prototype = {
     },
     Sort : function(column)
     {
+        rsetRowHeight();
         if(this.LastSorted)
         {
             this.LastSorted.className = this.NormalCss;

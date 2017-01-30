@@ -176,6 +176,16 @@ function highlightLargestCellOfEachCol(){
 
 }
 
+function setRowInDetailPage(){
+	var t=document.getElementById("PL");
+	for(var x=1; x < t.rows.length; x ++){
+		for(var y=1; y < t.rows[x].cells.length; y ++){
+			if(t.rows[x].cells[y].innerHTML=="x"){
+				t.rows[x].cells[y].setAttribute("class","pink");
+			}
+		}
+	}
+};
 
 
 //Function for testing only

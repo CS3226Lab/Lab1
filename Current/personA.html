@@ -1,122 +1,182 @@
-
   <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>PersonA</title>
+      <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <title>Person A</title>
+      </head>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/myStyle.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">CS3226</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="help.html">Help</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-  </head>
+          <img src="img/student/cleo.jpg" class="profile_student">
+      <div>
+          <h4><b>PersonA</b> in CS3226 S2 AY 2016/17</h4>
 
-  <body>
-  <div class="container-fluid">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">CS3226</a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="help.html">Help</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+          <p>PersonA account: <a href="#"><b>PersonA</b></a></p>
 
-      <img src="img/student/cleo.jpg" class="profile_student">
-  <div>
-      <h4><b>PersonA</b> in CS3226 S2 AY 2016/17</h4>
+          <p><b>SPE</b>(ed) component: <b>3 + 0 = 3</b><br>
+          <b>DIL</b>(igence) component: <b>2.5 + 1 + 2 + 4 = 9.5</b><br>
+          <b>Sum = SPE + DIL = 3 + 9.5 = 12.5</b>
+          </p>
+      </div>
 
-      <p>PersonA account: <a href="#"><b>PersonA</b></a></p>
+      <div class="row profile">
+        <div>
+          <p>Detailed scoress:
+          </p>
 
-      <p><b>SPE</b>(ed) component: <b>3 + 0 = 3</b><br>
-      <b>DIL</b>(igence) component: <b>2.5 + 1 + 2 + 4 = 9.5</b><br>
-      <b>Sum = SPE + DIL = 3 + 9.5 = 12.5</b>
-      </p>
-  </div>
+          <table class="table" id="PL">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Sum</th>
+              <th>01</th>
+              <th>02</th>
+              <th>03</th>
+              <th>04</th>
+              <th>05</th>
+              <th>06</th>
+              <th>07</th>
+              <th>08</th>
+              <th>09</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mini Contests</td>
+              <td>3</td>
+              <td>3.0</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+            </tr>
+            <tr>
+              <td>Team Contests</td>
+              <td>0</td>
+              <td>x</td>
+              <td>x</td>      
+            </tr>
+            <tr>
+              <td>Homework</td>
+              <td>2.5</td>
+              <td>1.0</td>
+              <td>1.5</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>      
+            </tr>
+            <tr>
+              <td>Problem Bs</td>
+              <td>1</td>
+              <td>1</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>      
+            </tr>
+            <tr>
+              <td>Kattis Sets</td>
+              <td>2</td>
+              <td>1</td>
+              <td>1</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>      
+            </tr>
+            <tr>
+              <td>Achievements</td>
+              <td>4</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>      
+            </tr>
+          </tbody>
+          </table>
 
-  <div class="row profile">
-    <div class="col-xs-12">
-      <p>Detailed scoress:
-      </p>
+          <p>Achievement details:</p>
+          <ol>
+            <li>Let it begins</li>          
+            <li>Quick starter</li>          
+            <li>Active in class 2/3</li>                                  
+          </ol>
 
-      <table class="table table-condensed table-striped profile">
-      <thead>
-        <tr>
-          <th width="150px">Component</th>
-          <th width="150px">Sum</th>
-          <th class='hidden-xs hidden-sm'>01</th><th class='hidden-xs hidden-sm'>02</th><th class='hidden-xs hidden-sm'>03</th><th class='hidden-xs hidden-sm'>04</th><th class='hidden-xs hidden-sm'>05</th><th class='hidden-xs hidden-sm'>06</th><th class='hidden-xs hidden-sm'>07</th><th class='hidden-xs hidden-sm'>08</th><th class='hidden-xs hidden-sm'>09</th><th class='hidden-xs hidden-sm'>10</th><th class='hidden-xs hidden-sm'>11</th><th class='hidden-xs hidden-sm'>12</th>      </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Mini Contests</td>
-          <td>3</td>
-          <td class='hidden-xs hidden-sm'>3.0</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td>      </tr>
-        <tr>
-          <td>Team Contests</td>
-          <td>0</td>
-          <td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td>      </tr>
-        <tr>
-          <td>Homework</td>
-          <td>2.5</td>
-          <td class='hidden-xs hidden-sm'>1.0</td><td class='hidden-xs hidden-sm'>1.5</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td>      </tr>
-        <tr>
-          <td>Problem Bs</td>
-          <td>1</td>
-          <td class='hidden-xs hidden-sm'>1</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td>      </tr>
-        <tr>
-          <td>Kattis Sets</td>
-          <td>2</td>
-          <td class='hidden-xs hidden-sm'>1</td><td class='hidden-xs hidden-sm'>1</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td>      </tr>
-        <tr>
-          <td>Achievements</td>
-          <td>4</td>
-          <td class='hidden-xs hidden-sm'>1</td><td class='hidden-xs hidden-sm'>1</td><td class='hidden-xs hidden-sm'>2</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td><td class='hidden-xs hidden-sm empty'>x</td>      </tr>
-      </tbody>
-      </table>
+          <p>Specific (public) comments about this student: <b>Active in Class: [Answer 1Q in L1, Answer 1Q on Week02]</b></p>
+        </div>
+      </div>
 
-      <p>Achievement details:
-      </p>
-
-      <ol>
-            <li>Let it begins</li>          <li>Quick starter</li>          <li>Active in class 2/3</li>                                  </ol>
-
-      <p>Specific (public) comments about this student: <b>Active in Class: [Answer 1Q in L1, Answer 1Q on Week02]</b>
-      </p>
-    </div>
-  </div>
-
-  </div>
-  <footer>
-    <p align="center">&copy; 2017 Steven
-    </p>
-  </footer>
-  <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-1566631-3', 'auto');
-  ga('send', 'pageview');
-  </script>
-  </body>
-  </html>
+      </div>
+      <footer>
+        <address>
+        Written by:<br>
+        LiangYuan (A0133975W)<br> 
+        Ho Chek Seen (A0085082E)
+        </address> 
+        <p>&copy; Liang Yuan | Ho Chek Seen | CS3226 Lab 2</p>
+      </footer>
+      
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/myStyle.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+            <!-- lab 2: tables and highlights -->
+            <link rel="stylesheet" href="css/lab2.css">
+            
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/highlight_table.js"></script>
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script language="javascript" type="text/javascript">
+        setRowInDetailPage();
+      </script>
+      </body>
+      </html>
