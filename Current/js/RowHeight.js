@@ -11,6 +11,9 @@ function setRowHeight(){
     	this.row2=this.Table.rows[x].cells;
     	diff=this.row1[11].innerHTML-this.row2[11].innerHTML;
     	document.getElementById(x).style.height=(diff+1)*37+"px";
+    	for (var y = 0; y<this.row2.length; y++) {
+    		document.getElementById(x).cells[y].style.verticalAlign="bottom";
+    	}
     }
 }
 
