@@ -137,11 +137,11 @@ function setRowWithLowestSumToPink(){
 
 //Find each col, highlight the one with highest score.
 
-function setCellColor(r, col, color){
+/*function setCellColor(r, col, color){
 
 	var x = document.getElementById(r);
 	x.cells[col].setAttribute("class",color);
-}
+}*/
 
 function getLargestValueOfEachCol(){
 	var largest = temp[1];
@@ -158,7 +158,9 @@ function highlightLargestCellWithOrange(highscore, index){
 
 	for(i=1; i < rows; i ++){
 		if(highscore == temp[i]){
-			setCellColor(i, index, "orange")
+			//setCellColor(i, index, "orange")
+			var x = document.getElementById(i);
+			x.cells[index].style.background = "orange";
 		}
 	}
 
@@ -181,7 +183,7 @@ function setRowInDetailPage(){
 	for(var x=1; x < t.rows.length; x ++){
 		for(var y=1; y < t.rows[x].cells.length; y ++){
 			if(t.rows[x].cells[y].innerHTML=="x"){
-				t.rows[x].cells[y].setAttribute("class","pink");
+				t.rows[x].cells[y].style.background = "pink";
 			}
 		}
 	}

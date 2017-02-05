@@ -58,10 +58,10 @@ TableSorter.prototype = {
     Sort : function(column)
     {
         rsetRowHeight();
-        if(this.LastSorted)
+        /*if(this.LastSorted)
         {
             this.LastSorted.className = this.NormalCss;
-        }
+        }*/
         var SortAsNumber = true;
         for(var x = 0; x < this.Rows.length && SortAsNumber; x++)
         {
@@ -93,12 +93,12 @@ TableSorter.prototype = {
         {
             this.Rows.reverse();
             this.ViewState[column] = false;
-            this.Header[column].className = this.SortDescCss;
+            //this.Header[column].className = this.SortDescCss;
         }
         else
         {
             this.ViewState[column] = true;
-            this.Header[column].className = this.SortAscCss;
+            //this.Header[column].className = this.SortAscCss;
         }
         this.LastSorted = this.Header[column];
         var frag = document.createDocumentFragment();

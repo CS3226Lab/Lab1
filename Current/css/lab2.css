@@ -1,7 +1,7 @@
 div.legend{
-    margin:auto;
+    margin:0 auto;
     padding:20px;
-    width:400px;
+    text-align:left;
     border: 1px solid black
 }
 

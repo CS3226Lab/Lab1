@@ -28,17 +28,19 @@ footer{
 }
 
 img.profile_student{
-    position:absolute;
-    border: 5px solid black;
-    right:80px;
-    top:80px;
-    width:240px;
-    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    width:200px;
 }
 
-div.profile{
-  margin-top: 200px;
-}
-    
+img.flag{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    width:100px;
+}   
     
 }
