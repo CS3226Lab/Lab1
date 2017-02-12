@@ -1,0 +1,65 @@
+Creating database and noting down details:
+
+https://help.ubuntu.com/lts/serverguide/mysql.html
+
+TO GET ORIGINAL PASSWORD TO SIGN IN FOR THE FIRST TIME GO TO
+
+nano /root/.digitalocean_password
+
+
+After that follow the one which update user authentication_string at how to change mysql-root-password
+
+To change mysql root password: for my sql version 5.7
+
+http://unix.stackexchange.com/questions/291319/how-to-change-mysql-root-password-using-mysql-v5-7
+
+Then 
+
+service mysql restart
+
+
+Insert new data into table:
+
+
+INSERT INTO maintable(rank, country, name, mc) VALUES (1, 'SIN', 'JACK REDFIELD', 1.0);
+
+database: CS3226Lab
+
+table name: maintable
+
+
+To login:
+
+mysql -p
+password: chickenrice
+
+
+
+Example code for logging into database and retrieving data using php
+
+ <?php
+$servername = "localhost";
+$username = "root";
+$password = "chickenrice";
+$dbname = "CS3226Lab";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT id, firstname, lastname FROM MyGuests";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?> 
